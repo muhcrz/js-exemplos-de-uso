@@ -1,0 +1,129 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Corpo */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#354649;
+font-family:'Inter', sans-serif;
+}
+
+/* Container */
+.container{
+background:#6C7A89;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+width:320px;
+}
+
+/* Título */
+.container h2{
+margin-bottom:20px;
+color:#FFF;
+font-family:'Bebas Neue', sans-serif;
+letter-spacing:1px;
+}
+
+/* Subtítulo */
+.container h1{
+margin-bottom:20px;
+color:#FFF;
+font-size:small;
+}
+
+/* Input */
+input{
+width:100%;
+padding:10px;
+margin-bottom:12px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+/* Botão */
+button{
+width:100%;
+padding:10px;
+border:none;
+border-radius:6px;
+background:#A3C6C4;
+color:#354649;
+font-size:15px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#356b8c;
+}
+
+/* Resultado */
+#resultado{
+margin-top:15px;
+font-size:14px;
+color:#DEF5E5;
+white-space:pre-line;
+}
+
+/* ===== MODO CLARO ===== */
+
+body.light{
+background:#DEF5E5;
+}
+
+body.light .container{
+background:#BCEAD5;
+}
+
+body.light h2{
+color:#333;
+}
+
+body.light h1{
+color:#333;
+}
+
+body.light input{
+border:1px solid #9ED5C5;
+}
+
+body.light button{
+background:#8EC3B0;
+color:#333;
+}
+
+body.light button:hover{
+background:#9ED5C5;
+}
+
+body.light #resultado{
+color:#333;
+}
+
+/* Botão modo */
+#toggleModo{
+position:fixed;
+width:10%;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+padding:10px 15px;
+border:none;
+border-radius:20px;
+background:#007587;
+color:white;
+font-weight:bold;
+cursor:pointer;
+z-index:100;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Buscador de CEP</title>
+
+<!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Botão modo claro/escuro -->
+<button id="toggleModo" onclick="trocarModo()">Alterar Modo</button>
+
+<div class="container">
+
+<h2>Consultor de CEP</h2>
+<h1>Digite seu CEP para consultar seu endereço</h1>
+
+<input type="text" id="cep" placeholder="Digite o CEP">
+<button onclick="buscarCEP()">Buscar</button>
+
+<p id="resultado"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+function trocarModo(){
+document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
